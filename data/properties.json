@@ -1,0 +1,88 @@
+[
+    {
+        "id" :  0,
+        "name": null,
+        "kind": null,
+        "pictures": [],
+        "expenses": [
+            {
+                "id": 0,
+                "who": null,
+                "what": null,
+                "when": null,
+                "cost": null,
+                "category": null,
+                "improvement": false,
+                "pictures": []
+            }
+        ],
+        "schedule": [
+            {
+                "id": 0,
+                "date": null,
+                "period": "year",
+                "interval": 1,
+                "cost": 0,
+                "subject": null,
+                "contactId": null,
+                "done": false
+                }
+        ],
+        "notes": [
+            {
+                "id": 0,
+                "subject": null,
+                "text": null
+            }
+        ],
+        "tenants": [
+            {
+                "id": 0,
+                "contactId": null,
+                "start": {
+                    "date": null,
+                    "meter": {
+                        "date": null
+                        "gas": 0,
+                        "water": 0,
+                        "electricity": 0
+                    },
+                    "rent": {
+                        "amount": 0,
+                        "period": "month",
+                        "interval": 1
+                    },
+                    "deposit": {
+                        "date": null,
+                        "paid": 0
+                    }
+                },
+                "end": {
+                    "date": null,
+                    "meter": {
+                        "date": null
+                        "gas": 0,
+                        "water": 0,
+                        "electricity": 0
+                    },
+                    "deposit": {
+                        "date": null,
+                        "returned": 0,
+                        "kept": 0
+                    }
+                }
+            }
+        ],
+        "investment": {
+            "purchase": {
+                "date": null,
+                "price": null
+            },
+            "currentValue": {
+                "date": null,
+                "price": null
+            }
+        }
+    }
+]
+

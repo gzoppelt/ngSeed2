@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="propr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>ngSeed2</title>
+        <% styles.forEach(function (file) { %>
+        <link rel="stylesheet" href="<%= file %>">
+        <% }); %>
+    </head>
+
+    <body>
+        <div class="container">
+            <div ui-view="menu"></div>
+            <div ui-view="main"></div>
+            <div ui-view="sub"></div>
+            <div ui-view="footer"></div>
+        </div>
+        <% scripts.forEach(function (file) { %>
+        <script src="<%= file %>"></script>
+        <% }); %>
+    </body>
+</html>
