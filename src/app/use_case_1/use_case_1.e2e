@@ -1,0 +1,7 @@
+describe('use_case_1-state', function () {
+    it('checks state', function () {
+        browser.get('http://localhost:3444/#/use_case_1');
+        var state = element(by.binding('cUc1.state'));
+        expect(state.getText()).toEqual('use_case_1');
+    });
+});

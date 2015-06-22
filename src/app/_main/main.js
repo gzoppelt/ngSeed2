@@ -1,7 +1,11 @@
 angular.module('main', [
-    'ui.router'
+    'ui.router',
+    'main_menu',
+    'main_footer'
     ])
-    .controller('MainController', function () {
+    .controller('MainController', function ($state) {
         var cMain = this;
+        cMain.message = 'This is the application root!';
+        cMain.state = $state.current.name;
     })
 ;

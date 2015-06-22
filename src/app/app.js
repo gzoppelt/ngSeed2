@@ -1,12 +1,12 @@
 //app.js
 'use strict';
-angular.module('propr', [
+angular.module('ngSeed2', [
         'ui.router',
         'templates-app',
         'modules',
 
         'main',
-        'main_menu',
+
         'use_case_1',
         'test_doge_debug'
     ])
@@ -21,11 +21,12 @@ angular.module('propr', [
                     },
                     'main': {
                         templateUrl: 'app/_main/main.html',
-                        controller: 'MainController'
+                        controller: 'MainController as cMain'
                     },
                     'sub': {},
                     'footer': {
-                        template: '<span class="glyphicon glyphicon-heart"></span> from Z-Bit'
+                        templateUrl: 'app/_main/footer/main_footer.html',
+                        controller: 'FooterController as cFooter'
                     }
                 }
             })

@@ -1,0 +1,11 @@
+describe('main-state', function () {
+    it('should display message', function () {
+        browser.get('http://localhost:3444#/');
+
+        var message = element(by.binding('cMain.message'));
+        expect(message.getText()).toEqual('This is the application root!');
+
+        var state = element(by.binding('cMain.state'));
+        expect(state.getText()).toEqual('main');
+    });
+});

@@ -1,0 +1,7 @@
+describe('sub_case_11-state', function () {
+    it('checks state', function () {
+        browser.get('http://localhost:3444/#/use_case_1/sub_case_11');
+        var state = element(by.binding('cSc11.state'));
+        expect(state.getText()).toEqual('sub_case_11');
+    });
+});

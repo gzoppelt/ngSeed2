@@ -1,4 +1,4 @@
-angular.module('sub_case_11',[
+angular.module('sub_case_11', [
     'ui.router'
 ])
     .config(function ($stateProvider) {
@@ -12,16 +12,24 @@ angular.module('sub_case_11',[
                     },
                     'main': {
                         templateUrl: 'app/use_case_1/use_case_1.html',
+                        controller: 'UseCase1Controller as cUc1'
+
                     },
                     'sub': {
-                        templateUrl: 'app/use_case_1/sub_case_11/sub_case_11.html'
+                        templateUrl: 'app/use_case_1/sub_case_11/sub_case_11.html',
+                        controller:  'SubCase11Controller as cSc11'
                     },
                     'footer': {
-                        template: '<span class="glyphicon glyphicon-heart"></span> from Z-Bit'
+                        templateUrl: 'app/_main/footer/main_footer.html',
+                        controller: 'FooterController as cFooter'
                     }
                 }
 
             })
         ;
+    })
+    .controller('SubCase11Controller', function SubCase11Controller ($state) {
+        var cSc11 = this;
+        cSc11.state = $state.current.name;
     })
 ;

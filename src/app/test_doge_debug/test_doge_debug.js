@@ -16,7 +16,8 @@ angular.module('test_doge_debug', [
                     },
                     'sub': {},
                     'footer': {
-                        template: '<span class="glyphicon glyphicon-heart"></span> from Z-Bit'
+                        templateUrl: 'app/_main/footer/main_footer.html',
+                        controller: 'FooterController as cFooter'
                     }
                 }
 
